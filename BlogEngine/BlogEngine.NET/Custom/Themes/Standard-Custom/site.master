@@ -27,14 +27,12 @@
     <link href="src/css/bootstrap.min.css" rel="stylesheet" />
     <link href="src/css/font-awesome.min.css" rel="stylesheet" />
     <link href="src/css/styles.min.css?=v12" rel="stylesheet" />
-    <link href="~/scripts/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
-    <link href="~/scripts/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/XRegExp.js"></script>
-    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shCore.js"></script>
-    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shAutoloader.js"></script>
-    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/shActivator.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    <link href="src/css/atom-one-dark.css?=v12" rel="stylesheet" />
+    <link href="src/css/colorbox.css?=v12" rel="stylesheet" />
+    <link href="src/css/custom.css?=v12" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
-    <link rel="shortcut icon" href="~/Content/images/blog/blogengine.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon" />
     <style>
         body {
             background: [CUSTOMFIELD|THEME|Standard-Custom|background color left|#232526/];
@@ -85,8 +83,16 @@
                 </div>
             </div>
         </div>
-        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard/src/js/bootstrap.min.js"></script>
-        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard/src/js/custom.js"></script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/bootstrap.min.js"></script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/custom.js"></script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/highlight.pack.js"></script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript">
+			hljs.initHighlightingOnLoad();
+			$(function() {
+				$('a.colorbox').colorbox();
+			});
+		</script>
     </form>
 </body>
 </html>

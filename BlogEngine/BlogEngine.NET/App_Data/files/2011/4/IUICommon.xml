@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IUICommon</name>
+    </assembly>
+    <members>
+        <member name="F:IUICommon.EntityComboBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityComboBox.Refresh">
+            <summary>
+            Forces the control to invalidate its client area and immediatly redraw itself and any child controls.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityComboBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityComboBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityComboBox.ReadOnly">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:IUICommon.EntityComboBox.OnValueChanged">
+            <summary>
+            Ocurrs whenever 'ValueMember' property for this control changes.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityComboBox.WhereClause">
+            <summary>
+            Specifies the condition for the rows returned by a query.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityComboBox.OrderByClause">
+            <summary>
+            Specifies the sort for the result set.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityComboBox.ValueMember">
+            <summary>
+            Indicates the property to display for the items in the control.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityComboBox.DisplayMember">
+            <summary>
+            Indicates the property to use as the actual value for the items in the control.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityComboBox.Entity">
+            <summary>
+            Specifies the business entity for the control.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityComboBox.IsEmptyRow">
+            <summary>
+            Indicates can to use null value for the result set.
+            </summary>
+        </member>
+        <member name="T:IUICommon.EntityControlListView">
+            <summary>
+            Summary description for EntityControlListView.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:IUICommon.EntityControlListView.blnAutoFlush" -->
+        <member name="M:IUICommon.EntityControlListView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.Refresh">
+            <summary>
+            Forces the control to invalidate its client area and immediatly redraw itself and any child controls.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.OnEntityAdd">
+            <summary>
+            Occurs when 'Add' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.OnEntityUpdateByID">
+            <summary>
+            Occurs when 'Edit' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.OnEntityDeleteByID">
+            <summary>
+            Occurs when 'Delete' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.OnEntityCopyByID">
+            <summary>
+            Occurs when 'Copy' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.OnEntityFind">
+            <summary>
+            Occurs when 'Find' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.OnEntityFilter">
+            <summary>
+            Occurs when 'Filter' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.OnEntityPreview">
+            <summary>
+            Occurs when 'Preview' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlListView.OnEntityRefresh">
+            <summary>
+            Occurs when 'Refresh' toolbar button clicked.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:IUICommon.EntityControlListView.AutoFlush" -->
+        <member name="P:IUICommon.EntityControlListView.ListViewItems">
+            <summary>
+            Gets a collection containing all items in the control.
+            </summary>
+        </member>
+        <member name="E:IUICommon.EntityControlListView.SelectedIndexChanged">
+            <summary>
+            Occurs when the selection has been changed.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityControlListView.CheckBoxes">
+            <summary>
+            Gets or sets a value indicating whether a check box appears next to each item in the control.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityControlListView.WhereClause">
+            <summary>
+            Specifies the condition for the rows returned by a query.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityControlListView.OrderByClause">
+            <summary>
+            Specifies the sort for the result set.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityControlListView.Entity">
+            <summary>
+            Specifies the business entity for the control.
+            </summary>
+        </member>
+        <member name="T:IUICommon.EntityControlTreeView">
+            <summary>
+            Summary description for EntityControlTreeView.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:IUICommon.EntityControlTreeView.blnAutoFlush" -->
+        <member name="M:IUICommon.EntityControlTreeView.Refresh">
+            <summary>
+            Forces the control to invalidate its client area and immediatly redraw itself and any child controls.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityAdd">
+            <summary>
+            Occurs when 'Add' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityAddRoot">
+            <summary>
+            Occurs when 'Add' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityUpdateByID">
+            <summary>
+            Occurs when 'Edit' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityDeleteByID">
+            <summary>
+            Occurs when 'Delete' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityCopyByID">
+            <summary>
+            Occurs when 'Copy' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityFind">
+            <summary>
+            Occurs when 'Find' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityFilter">
+            <summary>
+            Occurs when 'Filter' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityPreview">
+            <summary>
+            Occurs when 'Preview' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityControlTreeView.OnEntityRefresh">
+            <summary>
+            Occurs when 'Refresh' toolbar button clicked.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:IUICommon.EntityControlTreeView.AutoFlush" -->
+        <member name="E:IUICommon.EntityControlTreeView.SelectedIndexChanged">
+            <summary>
+            Occurs when the selection has been changed.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityControlTreeView.WhereClause">
+            <summary>
+            Specifies the condition for the rows returned by a query.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityControlTreeView.OrderByClause">
+            <summary>
+            Specifies the sort for the result set.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityControlTreeView.Entity">
+            <summary>
+            Specifies the business entity for the control.
+            </summary>
+        </member>
+        <member name="T:IUICommon.EntityFormEdit">
+            <summary>
+            Summary description for EntityFormEdit.
+            </summary>
+        </member>
+        <member name="F:IUICommon.EntityFormEdit.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormEdit.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormEdit.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:IUICommon.EntityFormList">
+            <summary>
+            Summary description for EntityFormList.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.Refresh">
+            <summary>
+            Forces the control to invalidate its client area and immediatly redraw itself and any child controls.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.OnEntityAdd">
+            <summary>
+            Occurs when 'Add' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.OnEntityUpdateByID">
+            <summary>
+            Occurs when 'Edit' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.OnEntityDeleteByID">
+            <summary>
+            Occurs when 'Delete' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.OnEntityCopyByID">
+            <summary>
+            Occurs when 'Copy' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.OnEntityFind">
+            <summary>
+            Occurs when 'Find' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.OnEntityFilter">
+            <summary>
+            Occurs when 'Filter' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.OnEntityPreview">
+            <summary>
+            Occurs when 'Preview' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormList.OnEntityRefresh">
+            <summary>
+            Occurs when 'Refresh' toolbar button clicked.
+            </summary>
+        </member>
+        <member name="E:IUICommon.EntityFormList.SelectedIndexChanged">
+            <summary>
+            Occurs when the selection has been changed.
+            </summary>
+        </member>
+        <member name="P:IUICommon.EntityFormList.Entity">
+            <summary>
+            Specifies the business entity for the control.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormListView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormListView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormListView.Refresh">
+            <summary>
+            Forces the control to invalidate its client area and immediatly redraw itself and any child controls.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormTreeView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormTreeView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormTreeView.Refresh">
+            <summary>
+            Forces the control to invalidate its client area and immediatly redraw itself and any child controls.
+            </summary>
+        </member>
+        <member name="M:IUICommon.EntityFormTreeView.OnEntityAddRoot">
+            <summary>
+            Occurs when 'Add' toolbar button clicked.
+            </summary>
+        </member>
+    </members>
+</doc>

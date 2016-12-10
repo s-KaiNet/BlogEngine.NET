@@ -188,5 +188,5 @@ BlogEngine/.vs/
 BlogEngine/BlogEngine.NET/App_Data/datastore/extensions/*.xml
 
 PublishProfiles/
-newsletter.xml
+BlogEngine/BlogEngine.NET/App_Data/newsletter.xml
 Web.Config

@@ -573,6 +573,8 @@
     <Content Include="Custom\Themes\Standard-Custom\src\css\images\loading.gif" />
     <Content Include="Custom\Themes\Standard-Custom\src\css\images\loading_background.png" />
     <Content Include="Custom\Themes\Standard-Custom\src\css\images\overlay.png" />
+    <Content Include="Custom\Themes\Standard-Custom\src\favicon.ico" />
+    <Content Include="Custom\Themes\Standard-Custom\src\img\logomasteksymbol.jpg" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\highlight.pack.js" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\jquery.colorbox-min.js" />
     <Content Include="Custom\Themes\Standard\CommentForm.ascx" />
@@ -860,6 +862,8 @@
     <Content Include="Custom\Themes\Standard-Custom\src\scss\widgets\_textbox.scss" />
     <Content Include="Custom\Themes\Standard-Custom\package.json" />
     <Content Include="Custom\Themes\Standard-Custom\site.master" />
+    <None Include="Properties\PublishProfiles\spblog.net - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\spblog.net - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />

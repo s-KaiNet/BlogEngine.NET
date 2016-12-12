@@ -16,3 +16,9 @@ a.colorbox img{
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
+
+html body {
+	background: url('../img/back2.jpg') top right no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}

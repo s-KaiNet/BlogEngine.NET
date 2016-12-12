@@ -574,6 +574,8 @@
     <Content Include="Custom\Themes\Standard-Custom\src\css\images\loading_background.png" />
     <Content Include="Custom\Themes\Standard-Custom\src\css\images\overlay.png" />
     <Content Include="Custom\Themes\Standard-Custom\src\favicon.ico" />
+    <Content Include="Custom\Themes\Standard-Custom\src\img\back.jpg" />
+    <Content Include="Custom\Themes\Standard-Custom\src\img\back2.jpg" />
     <Content Include="Custom\Themes\Standard-Custom\src\img\logomasteksymbol.jpg" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\highlight.pack.js" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\jquery.colorbox-min.js" />

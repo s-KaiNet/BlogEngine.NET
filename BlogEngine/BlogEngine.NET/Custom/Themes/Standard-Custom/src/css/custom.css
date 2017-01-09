@@ -3,7 +3,7 @@
 			overflow-x: auto;
 		}*/
 
-a.colorbox img{
+a.colorbox img {
 	display: block;
 	padding: 9.5px;
 	margin: 0 0 10px;
@@ -21,4 +21,9 @@ html body {
 	background: url('../img/back2.jpg') top right no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+nav.blog-nav li a i:hover {
+	background: #fff;
+	color: #000;
 }

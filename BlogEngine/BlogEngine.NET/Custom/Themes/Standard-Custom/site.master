@@ -84,15 +84,9 @@
             </div>
         </div>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/bootstrap.min.js"></script>
-        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/custom.js"></script>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/highlight.pack.js"></script>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/jquery.colorbox-min.js"></script>
-		<script type="text/javascript">
-			hljs.initHighlightingOnLoad();
-			$(function() {
-				$('a.colorbox').colorbox();
-			});
-		</script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/custom.js"></script>
     </form>
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-585c2b6aaaa283f8"></script>
 </body>

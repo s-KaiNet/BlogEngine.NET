@@ -50,7 +50,6 @@
                         <div class="blog-info">
                             <a class="blog-logo" href="<%=Utils.AbsoluteWebRoot %>page/profile" tabindex="-1">
                                 <img src="<%=Utils.AbsoluteWebRoot %>[CUSTOMFIELD|THEME|Standard-Custom|Logo|Custom/Themes/Standard-Custom/src/img/logo.png/]" alt="<%=BlogSettings.Instance.Name %>" />
-                                <img class="mvp" src="<%=Utils.AbsoluteWebRoot %>Custom/Themes/Standard-Custom/MVP_Logo_Horizontal_Secondary_Black_CMYK_300ppi.png" alt="MVP" />
                                 <%=BlogSettings.Instance.Name %>
                             </a>
                             <div class="blog-author" style="text-align: center">

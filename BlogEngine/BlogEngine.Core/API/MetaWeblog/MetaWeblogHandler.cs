@@ -329,7 +329,11 @@
             post.IsPublished = publish;
             post.Slug = sentPost.slug;
             post.Description = sentPost.excerpt;
-            post.DateCreated = sentPost.postDate;
+
+            if (!(sentPost.postDate == DateTime.MinValue))
+            {
+                post.DateCreated = sentPost.postDate;
+            }
 
             if (sentPost.commentPolicy != string.Empty)
             {

@@ -1,4 +1,6 @@
-﻿namespace BlogEngine.Core
+﻿using System.Text.RegularExpressions;
+
+namespace BlogEngine.Core
 {
     using System;
     using System.Collections;
@@ -700,22 +702,23 @@
         {
             get
             {
-                int idx = Content.IndexOf("<img src=");
-                if (idx > 0)
+                string srcValue = "";
+                try
                 {
-                    try
+                    if (!string.IsNullOrEmpty(content))
                     {
-                        idx = idx + 10;
-                        var idxEnd = Content.IndexOf("\"", idx);
-                        if (idxEnd > idx)
+                        Match match = Regex.Match(content, @"<img\s+?.*?src=('|"")(.*?)\1.*?>",
+                            RegexOptions.Multiline | RegexOptions.IgnoreCase);
+                        if (match.Success)
                         {
-                            var len = idxEnd - idx;
-                            return Content.Substring(idx, len);
+                            srcValue = match.Groups[2].Value;
                         }
                     }
-                    catch (Exception) { }
+
                 }
-                return "";
+                catch (Exception) { }
+
+                return srcValue;
             }
         }
 

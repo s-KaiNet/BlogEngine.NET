@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -2167,6 +2168,7 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Custom\Extensions\TwitterPreview.cs" />
     <Compile Include="Custom\Widgets\CategoryList\CategoryList.cs" />
     <Compile Include="Custom\Widgets\Common.cs" />
     <Compile Include="Custom\Widgets\LinkList\LinkList.cs" />

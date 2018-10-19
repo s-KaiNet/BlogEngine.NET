@@ -1,0 +1,63 @@
+﻿#mce-EMAIL {
+	height: 3rem;
+	padding: 0 10px 0 10px;
+	border: none;
+	width: 100%;
+	font-size: 1rem;
+	outline: none !important;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#mc-embedded-subscribe {
+	padding: 10px;
+	width: 100%;
+	background: none;
+	outline: none;
+	border: none;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	color: #fff;
+}
+
+	#mc-embedded-subscribe:hover {
+		cursor: pointer;
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+
+	div.submitBtn {
+		margin-top: 10px;
+	}
+
+#mce-success-response, #mce-error-response {
+	margin: 5px 0;
+	text-align: justify;
+	font-size: 18px;
+}
+
+#mce-success-response {
+	color: #03b502;
+}
+
+#mce-error-response {
+	color: #f33e66;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	text-transform: uppercase;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	text-transform: uppercase;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	text-transform: uppercase;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	text-transform: uppercase;
+}
+::placeholder { /* Recent browsers */
+	text-transform: uppercase;
+}

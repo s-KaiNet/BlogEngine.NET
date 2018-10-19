@@ -575,13 +575,17 @@
     <Content Include="Custom\Themes\Standard-Custom\src\css\images\loading.gif" />
     <Content Include="Custom\Themes\Standard-Custom\src\css\images\loading_background.png" />
     <Content Include="Custom\Themes\Standard-Custom\src\css\images\overlay.png" />
+    <Content Include="Custom\Themes\Standard-Custom\src\css\mailchimp.css" />
     <Content Include="Custom\Themes\Standard-Custom\src\favicon.ico" />
     <Content Include="Custom\Themes\Standard-Custom\src\img\back.jpg" />
     <Content Include="Custom\Themes\Standard-Custom\src\img\back2.jpg" />
     <Content Include="Custom\Themes\Standard-Custom\src\img\logomasteksymbol.jpg" />
     <Content Include="Custom\Themes\Standard-Custom\MVP_Logo_Horizontal_Secondary_Black_CMYK_300ppi.png" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\highlight.pack.js" />
+    <Content Include="Custom\Themes\Standard-Custom\src\js\iframeResizer.contentWindow.min.js" />
+    <Content Include="Custom\Themes\Standard-Custom\src\js\iframeResizer.min.js" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\jquery.colorbox-min.js" />
+    <Content Include="Custom\Themes\Standard-Custom\src\mailchimp.html" />
     <Content Include="Custom\Themes\Standard\CommentForm.ascx" />
     <Content Include="Custom\Themes\Standard\CommentView.ascx" />
     <Content Include="Custom\Themes\Standard\newsletter.html" />
@@ -630,6 +634,7 @@
     <Content Include="Custom\Widgets\CommentList\widget.xml" />
     <Content Include="Custom\Widgets\LinkList\screenshot.png" />
     <Content Include="Custom\Widgets\LinkList\widget.xml" />
+    <Content Include="Custom\Widgets\MailChimpSubscription\widget.xml" />
     <Content Include="Custom\Widgets\MonthList\screenshot.png" />
     <Content Include="Custom\Widgets\MonthList\widget.xml" />
     <Content Include="Custom\Widgets\Newsletter\screenshot.png" />
@@ -867,6 +872,7 @@
     <Content Include="Custom\Themes\Standard-Custom\src\scss\widgets\_textbox.scss" />
     <Content Include="Custom\Themes\Standard-Custom\package.json" />
     <Content Include="Custom\Themes\Standard-Custom\site.master" />
+    <Content Include="Custom\Widgets\MailChimpSubscription\widget.cshtml" />
     <None Include="Properties\PublishProfiles\spblog.net - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\spblog.net - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />

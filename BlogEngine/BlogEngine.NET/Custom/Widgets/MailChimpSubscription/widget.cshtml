@@ -1,0 +1,9 @@
+﻿@using BlogEngine.Core
+<div class="Widget widget mailchimp">
+	<h4 class="WidgetHeader widget-header">Subscribe to newsletter</h4>
+	<div class="WidgetContent widget-content">
+		<iframe src=@(Utils.AbsoluteWebRoot.AbsoluteUri + "custom/themes/standard-custom/src/mailchimp.html") frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="width: 100%"></iframe>
+	</div>
+	<script type="text/javascript" src=@(Utils.AbsoluteWebRoot.AbsoluteUri + "custom/themes/standard-custom/src/js/iframeResizer.min.js")></script>
+	<script>iFrameResize()</script>
+</div>

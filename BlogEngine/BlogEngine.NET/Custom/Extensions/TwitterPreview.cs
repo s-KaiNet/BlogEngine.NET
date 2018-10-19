@@ -52,7 +52,7 @@ namespace BlogEngine.NET.Custom.Extensions
 			AddMetaTag("twitter:site", "@sergeev_srg", page);
 			AddMetaTag("twitter:creator", "@sergeev_srg", page);
 			AddMetaTag("twitter:title", post.Title, page);
-			AddMetaTag("twitter:description", GetDescription(e.Body) + "...", page);
+			AddMetaTag("twitter:description", GetDescription(e.Body) + "... [Click to read more]", page);
 
 			var imageSrc = post.FirstImgSrc;
 			if (string.IsNullOrEmpty(imageSrc))

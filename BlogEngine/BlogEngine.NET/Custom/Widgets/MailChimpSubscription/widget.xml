@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<metadata>
+    <id>MailChimpSubscription</id>
+    <description>Subscribes emails to list in Mail Chimp account</description>
+    <authors>Sergei Sergeev</authors>
+    <website>http://spblog.net</website>
+    <version>1.0.0.0</version>
+    <iconurl></iconurl>
+</metadata>

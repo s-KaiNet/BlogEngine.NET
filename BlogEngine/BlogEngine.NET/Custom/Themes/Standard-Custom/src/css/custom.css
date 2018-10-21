@@ -50,3 +50,12 @@ span.caption {
     height: 80px;
     width: inherit;
 }
+
+/* mailchimp popup*/
+body div.mc-modal {
+	width: 320px;
+}
+
+body div.mc-banner iframe{
+	height: 100px !important;
+}

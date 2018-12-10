@@ -17,11 +17,24 @@ var editorSetHtml = function (html) {
 tinymce.init({
     selector: '#txtContent',
     plugins: [
-        "advlist autolink lists link image charmap print preview anchor",
+        "advlist autolink lists link image charmap print preview anchor codesample toc help",
         "searchreplace visualblocks code fullscreen textcolor imagetools",
         "insertdatetime media table contextmenu paste sh4tinymce filemanager"
     ],
-    toolbar: "styleselect | bold underline italic | alignleft aligncenter alignright | bullist numlist | forecolor backcolor | link media sh4tinymce | fullscreen code | filemanager",
+    codesample_languages: [
+        { text: 'custom', value: 'custom' },
+        { text: 'HTML/XML', value: 'markup' },
+        { text: 'JavaScript', value: 'javascript' },
+        { text: 'CSS', value: 'css' },
+        { text: 'PHP', value: 'php' },
+        { text: 'Ruby', value: 'ruby' },
+        { text: 'Python', value: 'python' },
+        { text: 'Java', value: 'java' },
+        { text: 'C', value: 'c' },
+        { text: 'C#', value: 'csharp' },
+        { text: 'C++', value: 'cpp' }
+    ],
+    toolbar: "styleselect | bold underline italic | alignleft aligncenter alignright | bullist numlist | forecolor backcolor | link media sh4tinymce | fullscreen code | filemanager | codesample",
     autosave_ask_before_unload: false,
     max_height: 1000,
     min_height: 300,

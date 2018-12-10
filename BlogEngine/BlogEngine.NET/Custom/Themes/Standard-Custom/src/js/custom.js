@@ -1,25 +1,26 @@
-﻿hljs.initHighlightingOnLoad();
+﻿$('.post-body a[href*="image.axd"]:has(img)').addClass('colorbox');
+
+$('a.colorbox').colorbox({
+    maxWidth: '95%',
+    maxHeight: '95%'
+});
+
+$('a.colorbox')
+    .each(function () {
+        var $el = $(this);
+        var title = $el.attr('title') || $el.find('img').attr('title');
+        if (title) {
+            $el.attr('title', title);
+            $el.find('img').attr('title', title);
+            $el.append($('<span class="caption">' + title + '</span>'));
+        }
+    });
+
+$("pre.language-custom").removeClass("language-custom").addClass("custom");
+
+hljs.initHighlightingOnLoad();
 
 $(document).ready(function () {
-
-	$('.post-body a[href*="image.axd"]:has(img)').addClass('colorbox');
-
-	$('a.colorbox').colorbox({
-		maxWidth: '95%',
-		maxHeight: '95%'
-	});
-
-	$('a.colorbox')
-		.each(function () {
-			var $el = $(this);
-			var title = $el.attr('title') || $el.find('img').attr('title');
-			if (title) {
-				$el.attr('title', title);
-				$el.find('img').attr('title', title);
-				$el.append($('<span class="caption">' + title + '</span>'));
-			}
-		});
-
 	//
 	var blogAuthor = $(".blog-author");
 	if ($.trim(blogAuthor.html()).length) {

@@ -62,7 +62,12 @@
                 rsd.WriteAttributeString("name", "MetaWeblog");
                 rsd.WriteAttributeString("preferred", "true");
                 var prefix = BlogSettings.Instance.RequireSslMetaWeblogApi ? "https://" : "http://";
-                rsd.WriteAttributeString(
+				
+	            /* custom fix: ssl always enabled */
+	            prefix = "https://";
+				/* end custom fix */
+
+				rsd.WriteAttributeString(
                     "apiLink", string.Format("{0}{1}{2}metaweblog.axd", prefix, context.Request.Url.Authority, Utils.RelativeWebRoot));
                 rsd.WriteAttributeString("blogID", Utils.AbsoluteWebRoot.ToString());
                 rsd.WriteEndElement();

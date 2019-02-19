@@ -32,7 +32,7 @@
     <link href="src/css/colorbox.css?=v12" rel="stylesheet" />
     <link href="src/css/custom.css?=v12" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
-    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="src/favicon.ico?v=2" type="image/x-icon" />
     <style>
         body {
             background: [CUSTOMFIELD|THEME|Standard-Custom|background color left|#232526/];

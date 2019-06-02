@@ -27,7 +27,7 @@
     <link href="src/css/bootstrap.min.css" rel="stylesheet" />
     <link href="src/css/font-awesome.min.css" rel="stylesheet" />
     <link href="src/css/styles.min.css?=v12" rel="stylesheet" />
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
     <link href="src/css/atom-one-dark.css?=v12" rel="stylesheet" />
     <link href="src/css/colorbox.css?=v12" rel="stylesheet" />
     <link href="src/css/custom.css?=v12" rel="stylesheet" />
@@ -85,7 +85,7 @@
             </div>
         </div>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/bootstrap.min.js"></script>
-        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/highlight.pack.js"></script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/highlight.pack.js?v=1"></script>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/jquery.colorbox-min.js"></script>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/custom.js"></script>
     </form>

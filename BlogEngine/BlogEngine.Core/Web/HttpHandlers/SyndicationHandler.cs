@@ -185,7 +185,7 @@
                         client.Encoding = Encoding.Default;
                         using (var stream = client.OpenRead(context.Request.QueryString["apml"]))
                         {
-                            var doc = new XmlDocument();
+                            var doc = new XmlDocument() { XmlResolver = null };
                             if (stream != null)
                             {
                                 doc.Load(stream);
@@ -330,7 +330,7 @@
 
             if (subTitle != null)
             {
-                return string.Format("{0} - {1}", title, subTitle);
+                return $"{title} - {subTitle}";
             }
 
             return title;

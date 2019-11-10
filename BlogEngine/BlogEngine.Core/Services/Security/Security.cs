@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.ObjectModel;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Web;
 using System.Web.Security;
-using System.Diagnostics;
 using System.Security;
-using System.Security.Principal;
 
 namespace BlogEngine.Core
 {
@@ -173,7 +168,7 @@ namespace BlogEngine.Core
                         DateTime.Now,
                         expirationDate,
                         rememberMe,
-                        string.Format("{0}{1}{2}", SecurityValidationKey, AUTH_TKT_USERDATA_DELIMITER, Blog.CurrentInstance.Id),
+                        $"{SecurityValidationKey}{AUTH_TKT_USERDATA_DELIMITER}{Blog.CurrentInstance.Id}",
                         FormsAuthentication.FormsCookiePath
                     );
 
@@ -190,10 +185,7 @@ namespace BlogEngine.Core
                     string returnUrl = context.Request.QueryString["returnUrl"];
 
                     // ignore Return URLs not beginning with a forward slash, such as remote sites.
-                    if (string.IsNullOrWhiteSpace(returnUrl) || !returnUrl.StartsWith("/"))
-                        returnUrl = null;
-
-                    if (!string.IsNullOrWhiteSpace(returnUrl))
+                    if (Security.IsLocalUrl(returnUrl))
                     {
                         context.Response.Redirect(returnUrl);
                     }
@@ -207,6 +199,19 @@ namespace BlogEngine.Core
             }
 
             return false;
+        }
+
+        private static bool IsLocalUrl(string url)
+        {
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return false;
+            }
+            else
+            {
+                return ((url[0] == '/' && (url.Length == 1 || (url[1] != '/' && url[1] != '\\'))) || // "/" or "/foo" but not "//" or "/\" 
+						(url.Length > 1 && url[0] == '~' && url[1] == '/')); // "~/" or "~/foo"
+            }
         }
 
         private const string AUTH_TKT_USERDATA_DELIMITER = "-|-";
@@ -371,7 +376,7 @@ namespace BlogEngine.Core
         /// <returns></returns>
         public static bool IsAuthorizedTo(AuthorizationCheck authCheck, IEnumerable<Rights> rights)
         {
-            if (rights.Count() == 0)
+            if (!rights.Any())
             {
                 // Always return false for this. If there's a mistake where authorization
                 // is being checked for on an empty collection, we don't want to return 

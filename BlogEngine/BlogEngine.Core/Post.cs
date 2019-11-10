@@ -480,7 +480,7 @@ namespace BlogEngine.Core
         {
             get
             {
-                return new Uri(string.Format("{0}post.aspx?id={1}", this.Blog.AbsoluteWebRoot, this.Id));
+                return new Uri($"{Blog.AbsoluteWebRoot}post.aspx?id={Id}");
                 //return new Uri(string.Format("{0}post/{1}", this.Blog.AbsoluteWebRoot, this.Slug));
             }
         }
@@ -661,7 +661,7 @@ namespace BlogEngine.Core
         {
             get
             {
-                return new Uri(string.Format("{0}trackback.axd?id={1}", this.Blog.AbsoluteWebRoot, this.Id));
+                return new Uri($"{Blog.AbsoluteWebRoot}trackback.axd?id={Id}");
             }
         }
 
@@ -1183,7 +1183,7 @@ namespace BlogEngine.Core
                 if (IsUniqueSlug(s, postId))
                     break;
 
-                s = string.Format("{0}{1}", slug, i);
+                s = $"{slug}{i}";
             }
             return s;
         }
@@ -1953,7 +1953,7 @@ namespace BlogEngine.Core
                 var mail = new MailMessage
                 {
                     From = new MailAddress(BlogSettings.Instance.Email, BlogSettings.Instance.Name),
-                    Subject = string.Format("New comment on {0}", this.Title),
+                    Subject = $"New comment on {Title}",
                     Body = sb.ToString()
                 };
 

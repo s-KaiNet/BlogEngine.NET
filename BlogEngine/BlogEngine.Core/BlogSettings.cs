@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Collections.Specialized;
-    using System.Configuration;
     using System.Globalization;
     using System.Web;
 
@@ -149,7 +148,7 @@
         /// </summary>
         public static bool IsThemeRazor(string themeName)
         {
-            string path = HostingEnvironment.MapPath(string.Format("~/Custom/Themes/{0}/site.cshtml", themeName));
+            string path = HostingEnvironment.MapPath($"~/Custom/Themes/{themeName}/site.cshtml");
             return File.Exists(path);
         }
 
@@ -421,27 +420,27 @@
                     var request = context.Request;
                     if (request.QueryString["theme"] != null)
                     {
-                        return request.QueryString["theme"];
+                        return request.QueryString["theme"].SanitizePath();
                     }
 
                     var cookie = request.Cookies[this.ThemeCookieName];
                     if (cookie != null)
                     {
-                        return cookie.Value;
+                        return cookie.Value.SanitizePath();
                     }
 
                     if (Utils.ShouldForceMainTheme(request))
                     {
-                        return this.configuredTheme;
+                        return this.configuredTheme.SanitizePath();
                     }
                 }
 
-                return this.configuredTheme;
+                return this.configuredTheme.SanitizePath();
             }
 
             set
             {
-                this.configuredTheme = String.IsNullOrEmpty(value) ? String.Empty : value;
+                this.configuredTheme = String.IsNullOrEmpty(value) ? String.Empty : value.SanitizePath();
             }
         }
 
@@ -1312,7 +1311,7 @@
                     }
                     catch (Exception e)
                     {
-                        Utils.Log(string.Format("Error loading blog settings: {0}", e.Message));
+                        Utils.Log($"Error loading blog settings: {e.Message}");
                     }
                 }
 

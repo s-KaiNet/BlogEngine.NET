@@ -50,8 +50,8 @@
 
                 // Service 
                 rsd.WriteStartElement("service");
-                rsd.WriteElementString("engineName", string.Format("BlogEngine.NET {0}", BlogSettings.Instance.Version()));
-                rsd.WriteElementString("engineLink", "http://dotnetblogengine.com");
+                rsd.WriteElementString("engineName", $"BlogEngine.NET {BlogSettings.Instance.Version()}");
+                rsd.WriteElementString("engineLink", "https://blogengine.io");
                 rsd.WriteElementString("homePageLink", Utils.AbsoluteWebRoot.ToString());
 
                 // APIs
@@ -68,7 +68,7 @@
 				/* end custom fix */
 
 				rsd.WriteAttributeString(
-                    "apiLink", string.Format("{0}{1}{2}metaweblog.axd", prefix, context.Request.Url.Authority, Utils.RelativeWebRoot));
+                    "apiLink", $"{prefix}{context.Request.Url.Authority}{Utils.RelativeWebRoot}metaweblog.axd");
                 rsd.WriteAttributeString("blogID", Utils.AbsoluteWebRoot.ToString());
                 rsd.WriteEndElement();
 
@@ -76,7 +76,7 @@
                 rsd.WriteStartElement("api");
                 rsd.WriteAttributeString("name", "BlogML");
                 rsd.WriteAttributeString("preferred", "false");
-                rsd.WriteAttributeString("apiLink", string.Format("{0}api/BlogImporter.asmx", Utils.AbsoluteWebRoot));
+                rsd.WriteAttributeString("apiLink", $"{Utils.AbsoluteWebRoot}api/BlogImporter.asmx");
                 rsd.WriteAttributeString("blogID", Utils.AbsoluteWebRoot.ToString());
                 rsd.WriteEndElement();
 

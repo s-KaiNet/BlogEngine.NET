@@ -35,7 +35,7 @@ namespace BlogEngine.Core
         /// <summary>
         ///     Private member to hold the URI of the syndication generation utility.
         /// </summary>
-        private static readonly Uri GeneratorUri = new Uri("http://dotnetblogengine.net/");
+        private static readonly Uri GeneratorUri = new Uri("https://blogengine.io/");
 
         /// <summary>
         ///     Private member to hold the version of the syndication generation utility.
@@ -84,12 +84,12 @@ namespace BlogEngine.Core
         {
             if (settings == null)
             {
-                throw new ArgumentNullException("settings");
+                throw new ArgumentNullException(nameof(settings));
             }
 
             if (categories == null)
             {
-                throw new ArgumentNullException("categories");
+                throw new ArgumentNullException(nameof(categories));
             }
 
             // ------------------------------------------------------------
@@ -135,7 +135,7 @@ namespace BlogEngine.Core
                                 { "wfw", "http://wellformedweb.org/CommentAPI/" },
                                 { "slash", "http://purl.org/rss/1.0/modules/slash/" },
                                 { "geo", "http://www.w3.org/2003/01/geo/wgs84_pos#" },
-                                { "betag", "http://dotnetblogengine.net/schemas/tags"}
+                                { "betag", "https://blogengine.io/schemas/tags"}
                             });
             }
         }
@@ -168,7 +168,7 @@ namespace BlogEngine.Core
             {
                 if (value == null)
                 {
-                    throw new ArgumentNullException("value");
+                    throw new ArgumentNullException(nameof(value));
                 }
                 
                 this.blogSettings = value;
@@ -243,12 +243,12 @@ namespace BlogEngine.Core
         {
             if (stream == null)
             {
-                throw new ArgumentNullException("stream");
+                throw new ArgumentNullException(nameof(stream));
             }
 
             if (publishables == null)
             {
-                throw new ArgumentNullException("publishables");
+                throw new ArgumentNullException(nameof(publishables));
             }
 
             if (!stream.CanWrite)
@@ -536,7 +536,7 @@ namespace BlogEngine.Core
             {
                 foreach (var tag in publishable.Tags)
                 {
-                    writer.WriteElementString("betag", "tag", "http://dotnetblogengine.net/schemas/tags", tag);
+                    writer.WriteElementString("betag", "tag", "https://blogengine.io/schemas/tags", tag);
                 }
             }
 
@@ -725,7 +725,7 @@ namespace BlogEngine.Core
             {
                 foreach (var tag in publishable.Tags)
                 {
-                    writer.WriteElementString("betag", "tag", "http://dotnetblogengine.net/schemas/tags", tag);
+                    writer.WriteElementString("betag", "tag", "https://blogengine.io/schemas/tags", tag);
                 }
             }
 
@@ -845,7 +845,7 @@ namespace BlogEngine.Core
 
             writer.WriteStartElement("link");
             writer.WriteAttributeString("rel", "self");
-            writer.WriteAttributeString("href", string.Format("{0}syndication.axd?format=atom", Utils.AbsoluteWebRoot));
+            writer.WriteAttributeString("href", $"{Utils.AbsoluteWebRoot}syndication.axd?format=atom");
             writer.WriteEndElement();
 
             // writer.WriteStartElement("link");
@@ -1060,7 +1060,7 @@ namespace BlogEngine.Core
             //     url = HttpContext.Current.Request.Url.ToString();
             // }
             writer.WriteElementString("docs", "http://www.rssboard.org/rss-specification");
-            writer.WriteElementString("generator", string.Format("BlogEngine.NET {0}", BlogSettings.Instance.Version()));
+            writer.WriteElementString("generator", $"BlogEngine.NET {BlogSettings.Instance.Version()}");
 
             // writer.WriteRaw("\n<atom:link href=\"" + url + "\" rel=\"self\" type=\"application/rss+xml\" />");
             if (!String.IsNullOrEmpty(this.Settings.Language))

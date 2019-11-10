@@ -1,13 +1,8 @@
 ﻿using BlogEngine.Core.Data.Contracts;
-using BlogEngine.Core.Data.Models;
 using BlogEngine.Core.FileSystem;
 using BlogEngine.Core.Providers;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Dynamic;
-using System.Web;
-using System.Web.Security;
 
 namespace BlogEngine.Core.Data
 {
@@ -22,6 +17,8 @@ namespace BlogEngine.Core.Data
             var list = new List<FileInstance>();
             var rwr = Utils.RelativeWebRoot;
             var responsePath = "root";
+
+            path = path.SanitizePath();
 
             if(string.IsNullOrEmpty(path))
                 path = Blog.CurrentInstance.StorageLocation + Utils.FilesFolder;

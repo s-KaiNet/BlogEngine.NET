@@ -18,8 +18,8 @@ tinymce.init({
     selector: '#txtContent',
     plugins: [
         "advlist autolink lists link image charmap print preview anchor codesample toc help",
-        "searchreplace visualblocks code fullscreen textcolor imagetools",
-        "insertdatetime media table contextmenu paste sh4tinymce filemanager"
+        "searchreplace visualblocks code fullscreen imagetools",
+        "insertdatetime media table paste filemanager wordcount"
     ],
     codesample_languages: [
         { text: 'custom', value: 'custom' },

@@ -145,9 +145,9 @@
                 file.FullPath + "\" alt=\"" + file.Name + "\">" + file.Name + " (" + file.FileSize + ")</a></p>";
         }
         // get hold on TinyMce editor and inject link
-        var wm = top.tinymce.activeEditor.windowManager;
-        wm.getParams().ed.insertContent(s);
-        wm.getWindows()[0].close();
+        var editor = top.tinymce.activeEditor;
+        editor.insertContent(s);
+        editor.windowManager.close();
     }
 
     $scope.load('');

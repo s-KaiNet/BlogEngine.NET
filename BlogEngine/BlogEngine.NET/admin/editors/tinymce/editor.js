@@ -44,6 +44,7 @@ tinymce.init({
     relative_urls: false,
     browser_spellcheck: true,
     paste_data_images: true,
+    spoiler_caption: 'spoiler (click to show)',
     setup: function (editor) {
         editor.on('init', function (e) {
             if (htmlContent) {

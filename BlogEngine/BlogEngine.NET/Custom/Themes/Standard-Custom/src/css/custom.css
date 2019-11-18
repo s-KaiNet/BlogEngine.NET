@@ -8,42 +8,43 @@
 }
 
 a.colorbox img {
-	display: block !important;
-	padding: 9.5px !important;
-	margin: 0 auto !important;
-	font-size: 13px !important;
-	line-height: 1.42857143 !important;
-	word-break: break-all !important;
-	word-wrap: break-word !important;
-	color: #333 !important;
-	background-color: #f5f5f5 !important;
-	border: 1px solid #ccc !important;
-	border-radius: 4px !important;
+    display: block !important;
+    padding: 9.5px !important;
+    margin: 0 auto !important;
+    font-size: 13px !important;
+    line-height: 1.42857143 !important;
+    word-break: break-all !important;
+    word-wrap: break-word !important;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
 }
 
 html body {
-	background: url('../img/back2.jpg') top right no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+    background: url('../img/back2.jpg') top right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav.blog-nav li a i:hover {
-	background: #fff;
-	color: #000;
+    background: #fff;
+    color: #000;
 }
 
 a.colorbox {
-	display: block;
+    display: block;
 }
 
 span.caption {
-	display: block;
-	text-align: center;
-	margin: 0 auto;
-	text-decoration: none;
-	color: gray;
-	font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
 }
+
 .blog-logo img.mvp {
     border-radius: inherit;
     opacity: 0.8;
@@ -53,9 +54,27 @@ span.caption {
 
 /* mailchimp popup*/
 body div.mc-modal {
-	width: 320px;
+    width: 320px;
 }
 
-body div.mc-banner iframe{
-	height: 100px !important;
+body div.mc-banner iframe {
+    height: 100px !important;
 }
+
+.spoiler {
+    border: 1px solid #585858;
+    border-radius: 2px;
+    margin: 5px 0;
+}
+
+.spoiler-toggle {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+}
+
+    .spoiler-toggle:hover {
+        cursor: pointer;
+    }
+

@@ -146,6 +146,14 @@
     <Content Include="admin\editors\tinymce\plugins\help\img\logo.png" />
     <Content Include="admin\editors\tinymce\plugins\help\plugin.min.js" />
     <Content Include="admin\editors\tinymce\plugins\quickbars\plugin.min.js" />
+    <Content Include="admin\editors\tinymce\plugins\spoiler\css\spoiler.css" />
+    <Content Include="admin\editors\tinymce\plugins\spoiler\img\eye-blocked.png" />
+    <Content Include="admin\editors\tinymce\plugins\spoiler\img\eye-plus.png" />
+    <Content Include="admin\editors\tinymce\plugins\spoiler\img\spoiler_icons.svg" />
+    <Content Include="admin\editors\tinymce\plugins\spoiler\LGPL.txt" />
+    <Content Include="admin\editors\tinymce\plugins\spoiler\license.txt" />
+    <Content Include="admin\editors\tinymce\plugins\spoiler\plugin.js" />
+    <Content Include="admin\editors\tinymce\plugins\spoiler\plugin.min.js" />
     <Content Include="admin\editors\tinymce\plugins\toc\plugin.min.js" />
     <Content Include="admin\editors\tinymce\skins\content\dark\content.min.css" />
     <Content Include="admin\editors\tinymce\skins\content\default\content.min.css" />

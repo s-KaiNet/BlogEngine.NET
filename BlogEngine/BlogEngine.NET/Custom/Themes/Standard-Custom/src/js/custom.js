@@ -101,4 +101,8 @@ $(document).ready(function () {
 	//
 	$(".blog-nav li a, [data-toggle=tooltip]").tooltip();
 
+    $('.spoiler-text').hide();
+    $('.spoiler-toggle').click(function(){
+        $(this).next().toggle();
+    }); 
 });

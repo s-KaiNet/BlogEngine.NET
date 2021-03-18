@@ -652,6 +652,10 @@
     <Content Include="admin\editors\tinymce\plugins\codesample\css\prism.css" />
     <Content Include="admin\editors\tinymce\plugins\codesample\plugin.min.js" />
     <Content Include="admin\editors\tinymce\plugins\customimage\plugin.min.js" />
+    <Content Include="admin\editors\tinymce\plugins\emoticons\js\emojiimages.js" />
+    <Content Include="admin\editors\tinymce\plugins\emoticons\js\emojiimages.min.js" />
+    <Content Include="admin\editors\tinymce\plugins\emoticons\js\emojis.js" />
+    <Content Include="admin\editors\tinymce\plugins\emoticons\js\emojis.min.js" />
     <Content Include="admin\editors\tinymce\plugins\help\img\logo.png" />
     <Content Include="admin\editors\tinymce\plugins\help\plugin.min.js" />
     <Content Include="admin\editors\tinymce\plugins\quickbars\plugin.min.js" />

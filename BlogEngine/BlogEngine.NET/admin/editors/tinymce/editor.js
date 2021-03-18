@@ -17,7 +17,7 @@ var editorSetHtml = function (html) {
 tinymce.init({
     selector: '#txtContent',
     plugins: [
-        "advlist autolink lists link image charmap print preview anchor codesample toc help spoiler",
+        "advlist autolink lists link image charmap print preview anchor codesample toc help spoiler emoticons",
         "searchreplace visualblocks codemirror fullscreen imagetools customimage",
         "insertdatetime media table paste filemanager wordcount"
     ],
@@ -35,7 +35,7 @@ tinymce.init({
         { text: 'C++', value: 'cpp' }
     ],
     fontsize_formats: "6pt 7pt 8pt 9pt 10pt 11pt 12pt 13pt 14pt 15pt 16pt 17pt 18pt 19pt 20pt 24pt 36pt 40pt",
-    toolbar: "undo redo | fontselect | fontsizeselect | styleselect | bold underline italic | alignleft aligncenter alignright | bullist numlist | forecolor backcolor | link media sh4tinymce | fullscreen code | filemanager | codesample | spoiler-add spoiler-remove| customimage",
+    toolbar: "undo redo | fontselect | fontsizeselect | styleselect | bold underline italic | alignleft aligncenter alignright | bullist numlist | forecolor backcolor | link media sh4tinymce | fullscreen code | filemanager | codesample | spoiler-add spoiler-remove| customimage emoticons",
     autosave_ask_before_unload: false,
     max_height: 1000,
     min_height: 300,

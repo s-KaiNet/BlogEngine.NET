@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
     <link href="src/css/atom-one-dark.css?=v12" rel="stylesheet" />
     <link href="src/css/colorbox.css?=v12" rel="stylesheet" />
-    <link href="src/css/custom.css?=v14" rel="stylesheet" />
+    <link href="src/css/custom.css?=v15" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
     <link rel="shortcut icon" href="src/favicon.ico?v=2" type="image/x-icon" />
     <style>

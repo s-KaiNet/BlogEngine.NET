@@ -18,9 +18,11 @@ $('a.colorbox')
 
 $("pre.language-custom").removeClass("language-custom").addClass("custom");
 
-hljs.initHighlightingOnLoad();
-
 $(document).ready(function () {
+
+	hljs.highlightAll();
+	window.highlightJsBadge();
+
 	//
 	var blogAuthor = $(".blog-author");
 	if ($.trim(blogAuthor.html()).length) {

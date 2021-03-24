@@ -1125,7 +1125,9 @@
     <Content Include="Custom\Themes\Standard-Custom\src\img\logomasteksymbol.jpg" />
     <Content Include="Custom\Themes\Standard-Custom\MVP_Logo_Horizontal_Secondary_Black_CMYK_300ppi.png" />
     <Content Include="Custom\Themes\Standard-Custom\src\img\mastaq.png" />
+    <Content Include="Custom\Themes\Standard-Custom\src\js\highlight.min.js" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\highlight.pack.js" />
+    <Content Include="Custom\Themes\Standard-Custom\src\js\highlightjs-badge.min.js" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\iframeResizer.contentWindow.min.js" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\iframeResizer.min.js" />
     <Content Include="Custom\Themes\Standard-Custom\src\js\jquery.colorbox-min.js" />

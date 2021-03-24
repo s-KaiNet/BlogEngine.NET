@@ -85,9 +85,10 @@
             </div>
         </div>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/bootstrap.min.js"></script>
-        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/highlight.pack.js?v=1"></script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/highlight.min.js?v=1"></script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/highlightjs-badge.min.js?v=1"></script>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/jquery.colorbox-min.js"></script>
-        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/custom.js?v=14"></script>
+        <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard-custom/src/js/custom.js?v=15"></script>
     </form>
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-585c2b6aaaa283f8"></script>
 </body>

@@ -3,6 +3,15 @@
 			overflow-x: auto;
 		}*/
 
+.post .code-badge {
+    right: 10px;
+    top: 12px;
+}
+
+    .post .code-badge .code-badge-language {
+        display: none;
+    }
+
 .blog-info .blog-logo img {
     opacity: 0.9;
 }
@@ -77,4 +86,3 @@ body div.mc-banner iframe {
     .spoiler-toggle:hover {
         cursor: pointer;
     }
-

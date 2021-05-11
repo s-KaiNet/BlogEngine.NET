@@ -57,6 +57,7 @@ tinymce.init({
         editor.on('init', function (e) {
             if (htmlContent) {
                 editor.setContent(htmlContent);
+                editor.shortcuts.add("alt+q", "Code format", "CodeSample");
             }
         });
     }

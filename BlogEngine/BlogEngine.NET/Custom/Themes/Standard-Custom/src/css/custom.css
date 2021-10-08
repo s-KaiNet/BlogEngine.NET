@@ -2,6 +2,11 @@
 			white-space: pre;
 			overflow-x: auto;
 		}*/
+@media (min-width: 1025px) {
+    body .container {
+        width: 80%;
+    }
+}
 
 .post .code-badge {
     right: 10px;

@@ -211,7 +211,6 @@
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\addon\tern\tern.js" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\addon\tern\worker.js" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\addon\wrap\hardwrap.js" />
-    <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\bin\upload-release.js" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\index.html" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\keymap\emacs.js" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\keymap\sublime.js" />
@@ -438,8 +437,6 @@
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\sparql\sparql.js" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\spreadsheet\index.html" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\spreadsheet\spreadsheet.js" />
-    <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\sql\index.html" />
-    <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\sql\sql.js" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\stex\index.html" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\stex\stex.js" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\stex\test.js" />
@@ -1354,10 +1351,6 @@
     <Content Include="Custom\Themes\Standard\page.master" />
     <Content Include="admin\editors\tinymce\skins\ui\oxide-dark\fonts\tinymce-mobile.woff" />
     <Content Include="admin\editors\tinymce\skins\ui\oxide\fonts\tinymce-mobile.woff" />
-    <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\bin\authors.sh" />
-    <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\bin\lint" />
-    <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\bin\release" />
-    <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\bin\source-highlight" />
     <Content Include="admin\editors\tinymce\plugins\codemirror\codemirror\LICENSE" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Custom\Themes\Standard-Custom\src\fonts\fontawesome-webfont.eot" />
@@ -2973,6 +2966,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="admin\editors\tinymce\plugins\codemirror\codemirror\bin\" />
+    <Folder Include="admin\editors\tinymce\plugins\codemirror\codemirror\mode\sql\" />
     <Folder Include="App_Data\datastore\extensions\" />
     <Folder Include="App_Data\files\" />
     <Folder Include="App_Data\packages\" />

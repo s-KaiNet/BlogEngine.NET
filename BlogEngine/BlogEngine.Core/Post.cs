@@ -10,6 +10,7 @@ namespace BlogEngine.Core
     using System.Linq;
     using System.Net.Mail;
     using System.Text;
+    using System.Text.RegularExpressions;
     using System.Web;
 
     using BlogEngine.Core.Data.Models;
@@ -696,7 +697,8 @@ namespace BlogEngine.Core
         }
 
         /// <summary>
-        /// URL of the first image in the post, if any
+        /// URL of the first image in the post, if any.
+        /// If there's no first image, returns the URL to "images/defaultImg.jpg" in the current theme used in the blog
         /// </summary>
         public string FirstImgSrc
         {

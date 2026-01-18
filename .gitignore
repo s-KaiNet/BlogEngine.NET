@@ -190,3 +190,5 @@ BlogEngine/BlogEngine.NET/App_Data/datastore/extensions/*.xml
 PublishProfiles/
 BlogEngine/BlogEngine.NET/App_Data/newsletter.xml
 Web.Config
+/.vs/slnx.sqlite
+/.vs/BlogEngine.NET/config/applicationhost.config
